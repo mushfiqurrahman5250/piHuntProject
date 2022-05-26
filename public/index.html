@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI-Hunt | An online learning platfrom </title>
+    <!-- slick carousel css -->
+    <link rel="stylesheet" href="./vendors/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Nunito:wght@200;300;400&family=Poppins:wght@100;300;400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-poppins text-gray-800 overflow-x-hidden">
+
+    <!-- start navbar -->
+    <nav class="bg-white shadow p-3 sticky top-0 z-50">
+        <div class="container mx-auto ">
+
+            <div class="flex justify-between">
+                <div class="flex justify-center items-center">
+                    <div>
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="" class="w-20">
+                        </a>
+
+                    </div>
+
+                    <div class="ml-10 hidden md:block relative group">
+                        <img src="./images/icons/category-icon.svg" alt="" class="w-5 h-5 cursor-pointer">
+                        <div class=" bg-white absolute hidden group-hover:block min-w-[150px]">
+                            <ul class="list-none">
+                                <li>
+                                    <a href="#" class="block bg-white hover:bg-slate-50 py-4 px-8 hover:text-red-500">
+                                    HTML
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block bg-white hover:bg-slate-50 py-4 px-8 hover:text-red-500">
+                                    CSS
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block bg-white hover:bg-slate-50 py-4 px-8 hover:text-red-500">
+                                    Bootstrap
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block bg-white hover:bg-slate-50 py-4 px-8 hover:text-red-500">
+                                    Tailwind
+                                </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="hidden md:block ml-10 relative">
+                        <span class="absolute top-1 left-3">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="search" class="transition w-full rounded-md text-xs p-2.5 pt-0.4 pl-10 bg-slate-100 " placeholder="Search for tutors,video etc...">
+
+                    </div>
+
+                </div>
+                <div class="flex justify-center items-center pr-10 md:pr-0 ">
+                    <ul class="list-none">
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-5 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+                                <span class="absolute -top-2 bg-red-500  text-white pl-1.5 text-xs -right-3 rounded-full h-4 w-4">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </a>
+                        </li>
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-5 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+                                <span class="absolute -top-2 bg-red-500  text-white pl-1.5 text-xs -right-3 rounded-full h-4 w-4">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <div class=" hidden group-hover:block absolute shadow w-80 bg-white">
+                                <div class="flex p-2 border-b border-slate-200">
+                                    <div class="mr-2">
+                                        <i class="fa-solid fa-user-circle text-lg p-2"></i>
+
+                                    </div>
+                                    <div>
+                                        <h3 class="text-gray-500 font-normal">Md.Mushfiqur Rahman</h3>
+                                        <p class="text-gray-400 font-thin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, numquam?</p>
+                                        <p class="text-gray-400 font-thin text-[10px] mt-2">2 Minute Ago</p>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="flex p-2  ">
+                                    <div class="mr-2">
+                                        <i class="fa-solid fa-user-circle text-lg p-2"></i>
+
+                                    </div>
+                                    <div>
+                                        <h3 class="text-gray-500 font-normal">samiul Islam</h3>
+                                        <p class="text-gray-400 font-thin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, numquam?</p>
+                                        <p class="text-gray-400 font-thin text-[10px] mt-2">5 Minute Ago</p>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-5 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+                                <span class="absolute -top-2 bg-red-500  text-white pl-1.5 text-xs -right-3 rounded-full h-4 w-4">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class=" hidden md:block -mt-3 mx-3 group">
+                        <a href="#" class="text-xl text-gray-500 group-hover:opacity-75 rounded-full h-3 w-3 shadow py-2.5 px-3.5">
+
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="absolute top-1 right-1 cursor-pointer mt-4 ml-4">
+                <span class="md:hidden navbar-toggle text-slate-900">
+                <i class="fa-solid fa-bars-staggered" id="toggle-icon"></i>
+            </span>
+            </div>
+
+        </div>
+        <div class="mobile-navbar hidden h-[100vh] bg-white absolute top-0 left-0 text-left shadow overflow-y transition-all">
+            <div class="text-center pt-2 flex items-center mt-3">
+                <a href="index.html" class="m-0 mx-auto">
+                    <img src="./images/logo.png" alt="" class="w-36">
+                </a>
+            </div>
+            <div class="pr-20">
+                <div class="ml-10 relative">
+                    <span class="absolute top-1 left-3">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="search" class="transition w-full rounded-md text-xs p-2.5 pt-0.4 pl-10 bg-slate-100 " placeholder="Search for tutors,video etc...">
+
+                </div>
+                <ul class="py-2 list-none">
+                    <li>
+                        <i class="fa-solid fa-cube text-gray-400 ml-10 font-semibold">
+                            Catagories
+                        </i>
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs ml-10"></i>HTML
+                        </a>
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs ml-10"></i>CSS
+                        </a>
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs ml-10"></i>Tailwind CSS
+                        </a>
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs ml-10"></i>Bootstrap CSS
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- start header/hero section -->
+    <header class="bg-sky-100 mt-0 md:mt-2 rounded-md text-center md:text-left  ">
+        <div class="container mx-auto py-10 md:py-40 md:bg-hero bg-contain bg-no-repeat bg-[right_0px_top_10px] ">
+            <h2 class=" text-4xl mb-1 pb-2 md:pb-0">
+                Find A Perfect
+            </h2>
+            <h2 class="font-semibold text-4xl pb-2 md:pb-0">
+                online course
+            </h2>
+            <p class="text-gray-500 my-3">
+                For Only course,You need to learn web development
+            </p>
+            <form action="" method="get" class="mt-4">
+                <div class="flex bg-white items-center p-4 ">
+                    <div class="basis-3/6 relative">
+                        <span class="absolute top-0.5 left-3">
+                         <i class="fa-solid fa-search text-slate-300"></i>
+                     </span>
+                        <input type="Search" class="pl-10 md:pl-12 w-full outline-none focus:outline-none font-thin " placeholder="search online courses">
+                    </div>
+                    <div class="basis-1/3 md:basis-2/6 flex">
+                        <div>
+                            <i class="fa-solid fa-cube text-gray-500 mr-2"></i>
+                        </div>
+                        <div class="flex-1">
+                            <select name="category" id="category_id" class="bg-lime-100 text-gray-500 font-thin w-full">
+                            <option value="">Category</option>
+                            <option value="">Bootstrap</option>
+                        </select>
+                        </div>
+
+                    </div>
+                    <div class="basis-1/3 md:basis-1/6 ">
+                        <button class="transition bg-red-500 text-white px-8 ml-2   hover:opacity-75 rounded-full p-3   w-full ">
+                               Search
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+            <p class="mt-4 text-gray-600">
+                <strong>
+                  popular Search:
+                 </strong>
+                <span class="text-gray-400">
+                           designer,Developer,PHP,HTML
+                 </span>
+            </p>
+        </div>
+
+
+    </header>
+
+    <!-- end header/hero section -->
+
+    <!-- start category section -->
+    <section id="categories" class="mt-10">
+        <div class="container mx-auto">
+            <h2 class="font-medium my-5 text-center md:text-left">Browser categories</h2>
+            <div class="flex flex-row gap-2 items-center text-center flex-wrap pl-4 md:pl-0 ">
+                <div class="transition basis-[45%] md:basis-[10.9%] bg-indigo-500 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/bootstrap.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">Bootstrap</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+                <div class="transition basis-[45%] md:basis-[10.9%] bg-orange-300 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/html.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">HTML</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+                <div class="transition basis-[45%]  md:basis-[10.9%] bg-fuchsia-300 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/sass.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">Sass</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+                <div class="transition basis-[45%] md:basis-[10.9%] bg-blue-300 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/jquery.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">jquery</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+                <div class="transition basis-[45%] md:basis-[10.9%] bg-sky-300 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/react.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">React</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+                <div class="transition basis-[45%] md:basis-[10.9%] bg-cyan-300 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/java.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">java</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+                <div class="transition basis-[45%] md:basis-[10.9%] bg-yellow-300 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/python.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">Python</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+                <div class="transition basis-[45%] md:basis-[10.9%] bg-lime-300 cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2 scale-90 group-hover:scale-120">
+                        <img src="./images/icons/mongodb.png" alt="" class="w-11 h-11  mx-auto mt-2 ">
+                    </div>
+                    <h4 class="mt-4 mb-2 ">MongoDB</h4>
+                    <p class="text-yellow-50 text-xs">30 courses</p>
+                </div>
+                <!--single category end-->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end category section -->
+    <!-- start popular courses section -->
+    <section id="popular-courses" class="mt-10">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <h2 class="font-medium my-5 text-center md:text-left">Popular courses</h2>
+                <div>
+                    <a href="courses.html" class="transition bg-white py-2 px-6 text-sm border rounded hover:bg-red-500 text-slate-900 hover:text-white">View More</a>
+                </div>
+            </div>
+
+            <div id="popular-course">
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course3.jpg" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course3.jpg" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course2.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course3.jpg" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end popular courses section -->
+    <!-- start new courses section -->
+    <section id="new-courses" class="mt-10">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <h2 class="font-medium my-5 text-center md:text-left">New courses</h2>
+                <div>
+                    <a href="courses.html" class="transition bg-white py-2 px-6 text-sm border rounded hover:bg-red-500 text-slate-900 hover:text-white">View More</a>
+                </div>
+            </div>
+
+
+            <div id="new-course">
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course3.jpg" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course3.jpg" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course2.png" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+                <div class="course-item group">
+                    <div class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course3.jpg" alt="" class="w-full rounded rounded-b-none">
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <span class="bg-emerald-300 text-orange-500 p-2 rounded text-[10px] font-bold ">
+                                            python
+                                      </span>
+                                </div>
+                                <div>
+                                    <span class="text-orange-500 font-bold">
+                                       $2000
+                                   </span>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 mb-3 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    complete python Boot camp from zero to hero
+                                </h2>
+                                <p class="text-gray-500 text-bold mt-2 ml-10">
+                                    32 Lessons
+                                </p>
+                                <div class="flex mt-5 items-center">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-0 ">
+                                    <img src="./images/avatar2.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar3.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <img src="./images/avatar1.png" alt="" class="w-8 h8 rounded-full z-10 -ml-4">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 z-10 -ml-4 text-center pt-2">
+                                        +2
+                                    </div>
+                                    <div class="text-gray-400 ml-3">
+                                        Student apply
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- single popular course item-->
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- end new courses section -->
+
+    <!-- start footer section -->
+    <section>
+        <footer class="bg-[#0f3069] text-white mt-16">
+            <div class="container  mx-auto px-5 py-16 ">
+                <div class="flex flex-col md:flex-row">
+                    <div class="basis-2/6">
+                        <img src="./images/logo-mini.png" alt="" srcset="" class="w-10">
+                        <div>
+                            <h3 class="font-medium mt-4 mb-3">
+                                Call US
+                            </h3>
+                            <div class="text-sm">
+                                <h4 class="mb-2">+8801721868922</h4>
+                                <h4 class="mb-2">piyas5250@gmail.com</h4>
+                                <h4 class="mb-2">9AM-5PM Monday-Friday</h4>
+                                <h4 class="mb-2">PO BOX 576, Hostain st. 533 Loss angels,California,USA</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="basis-1/6">
+                        <div class="p-4">
+                            <h3 class="font-medium mt-4 mb-3">
+                                Links
+                            </h3>
+                            <ul class="list-none  mt-4">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Start Here
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Blogs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Career
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Courses
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="basis-1/6">
+                        <div class="p-4">
+                            <h3 class="font-medium mt-4 mb-3">
+                                Information
+                            </h3>
+                            <ul class="list-none  mt-4">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Start Here
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Blogs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Career
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-chevron-right text-sm mr-3 "></i> Courses
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="basis-2/6">
+                        <div class="p-4">
+                            <h3 class="font-medium mt-4 mb-3">
+                                Sign Up for Our Newsletter
+                            </h3>
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint doloremque fuga, modi repellat nemo doloribus accusamus deleniti optio dolorum esse.
+                            </p>
+                            <p class="mt-4 relative">
+                                <input type="email" placeholder="your email" class="w-full p-3 pl-5 bg-white text-gray-700 rounded-full ">
+                                <span class="absolute top-1 right-2 bg-red-600 px-5 p-2 rounded-full uppercase">Subscribe</span>
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center mt-1">
+                &copy; 2022 All Rights Reserved.
+            </div>
+            </div>
+
+
+        </footer>
+
+    </section>
+
+    <!-- end footer section -->
+    <!-- jquery -->
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- slick carousel js -->
+    <script src="./vendors/slick/slick.min.js"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
